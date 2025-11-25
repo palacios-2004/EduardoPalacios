@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +19,13 @@ header {
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+header .subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  color: #ddd;
 }
 
 nav a {
@@ -28,6 +33,10 @@ nav a {
   margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 section {
@@ -41,19 +50,7 @@ h2 {
   color: #444;
 }
 
-.experiencia {
-  background: #fff;
-  padding: 1.2rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-.experiencia:hover {
-  transform: scale(1.02);
-}
-
+.experiencia,
 .proyecto {
   background: #fff;
   padding: 1.2rem;
@@ -63,12 +60,14 @@ h2 {
   transition: transform 0.2s;
 }
 
+.experiencia:hover,
 .proyecto:hover {
   transform: scale(1.02);
 }
 
 ul {
   margin-left: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 footer {
@@ -77,4 +76,19 @@ footer {
   background: #222;
   color: #fff;
   margin-top: 2rem;
+}
+
+#habilidades .skills-group {
+  margin-bottom: 1.5rem;
+}
+
+#habilidades .skills-group h3 {
+  margin-bottom: 0.4rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+#habilidades ul {
+  margin-left: 1.5rem;
+  list-style: disc;
 }
